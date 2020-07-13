@@ -1,10 +1,48 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>Testing WEB Java</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body>
-<p th:text="'Hello, ' + ${name} + '!'" />
+<body><center>
+    <form name="idform">
+        <input type="text" name="mm" value="Month">
+        <input type="text" name="yy" value="Year">
+        <input type="button" value="GO" onclick="location.href='?id='+escape(document.forms['idform'].elements['mm'].value)+','+escape(document.forms['idform'].elements['yy'].value)">
+    </form>
+
+
+<p th:text="'month:'+ ${txt} + 'year:'+ ${txt1}"/>
+   
+
+    <table style="border-collapse: collapse; width: 250px; height: 147px; float: center;" border="1">
+        <tbody>
+        <tr style="height: 21px;">
+
+            <td colspan="2" th:text="${txt2}"style="width: 70%; height: 21px;"/>
+        </tr>
+        <tr style="height: 21px;"><td style="width: 30%; background-color: #7e8c8d; text-align: left;"><span style="color: #ffffff;"><strong>MON</strong></span></td>
+            <td th:text="${txc1}" style="width: 70%; height: 21px;"/>
+        </tr>
+        <tr style="height: 21px;"><td style="width: 30%; background-color: #7e8c8d; text-align: left;"><span style="color: #ffffff;"><strong>TUE</strong></span></td>
+            <td th:text="${txc2}" style="width: 70%; height: 21px;"/>
+        </tr>
+        <tr style="height: 21px;"><td style="width: 30%; background-color: #7e8c8d; text-align: left;"><span style="color: #ffffff;"><strong>WED</strong></span></td>
+            <td th:text="${txc3}" style="width: 70%; height: 21px;"/>
+        </tr>
+        <tr style="height: 21px;"><td style="width: 30%; background-color: #7e8c8d; text-align: left;"><span style="color: #ffffff;"><strong>THU</strong></span></td>
+            <td th:text="${txc4}" style="width: 70%; height: 21px;"/>
+        </tr>
+        <tr style="height: 21px;"><td style="width: 30%; background-color: #7e8c8d; text-align: left;"><span style="color: #ffffff;"><strong>FRI</strong></span></td>
+            <td th:text="${txc5}" style="width: 70%; height: 21px;"/>
+        </tr>
+        <tr style="height: 21px;"><td style="width: 30%; background-color: #7e8c8d; text-align: left;"><span style="color: #ffffff;"><strong>SAT</strong></span></td>
+            <td th:text="${txc6}" style="width: 70%; height: 21px;"/>
+        </tr>
+        <tr style="height: 21px;"><td style="width: 30%; background-color: #7e8c8d; text-align: left;"><span style="color: #ffffff;"><strong>SUN</strong></span></td>
+            <td th:text="${txc7}" style="width: 70%; height: 21px;"/>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>
