@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Title</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 <form name="idform">
     <input type="text" name="text" value="txt">
 
-    <input type="button" value="GO" onclick="location.href='?id='+escape(document.forms['idform'].elements['text'].value)+'">
+    <input type="button" value="GO" onclick="location.href='?id='+escape(document.forms['idform'].elements['text'].value)">
 </form>
 <br>
 
