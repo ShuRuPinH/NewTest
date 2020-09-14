@@ -16,7 +16,7 @@ import java.util.List;
 
 
     @GetMapping("/")
-        public String greeting(@RequestParam String id, Model a) {
+        public String greeting(@RequestParam (required = false) String id, Model a) {
           if (id==null)id="123";
            a.addAttribute("text", Creator1.creat(id));
                        return "test";
