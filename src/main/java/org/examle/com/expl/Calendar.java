@@ -134,7 +134,7 @@ class Calendar {
         return strOfhDay;
     }
 
-    // определяет на кокой день приходится первое число
+    // определяет на какой день приходится первое число
     public static int Fst(int mm, int yyyy) {
         int mon=0;
         int year=0;
