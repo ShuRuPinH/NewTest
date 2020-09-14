@@ -7,20 +7,11 @@ import java.nio.file.Paths;
 
 public class Creator1 {
 
-  static String creat (){
+  static String creat (String ff){
 
 
-    Path p = Paths.get("texx.html");
-    Path niw;
 
-    {
-        try {
-            niw = Files.createFile(p);
-        } catch (IOException e) {
-           return "не удалось";
-        }
-    }
-    return niw.toAbsolutePath().toString();
+    return ff;
 }
 
 }
