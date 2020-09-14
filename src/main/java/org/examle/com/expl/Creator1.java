@@ -10,7 +10,7 @@ public class Creator1 {
   static String creat (){
 
 
-    Path p = Paths.get("test.html");
+    Path p = Paths.get("texx.html");
     Path niw;
 
     {
