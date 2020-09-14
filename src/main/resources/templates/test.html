@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -12,10 +13,11 @@
 <form name="idform">
     <input type="text" name="text" value="txt">
 
-    <input type="button" value="GO" onclick="location.href='?id='+escape(document.forms['idform'].elements['text'].value)+'"> //onClick
+    <input type="button" value="GO" onclick="location.href='?id='+escape(document.forms['idform'].elements['text'].value)+'">
 </form>
 <br>
 
-<p text="'path:'+ ${text} "/>
+<p th:text="'path:'+ ${text} "/>
+
 </body>
 </html>
