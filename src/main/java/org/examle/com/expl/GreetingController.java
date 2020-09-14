@@ -15,7 +15,7 @@ import java.util.List;
     public class GreetingController {
 
         @GetMapping("/")
-        public String greeting(@RequestParam String id, Model a) {
+        public String greeting(@RequestParam List<String> id, Model a) {
             a.addAttribute("text", Creator1.creat());
                        return "test";
         }
