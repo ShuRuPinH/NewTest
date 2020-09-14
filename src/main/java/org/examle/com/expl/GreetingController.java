@@ -14,8 +14,10 @@ import java.util.List;
 @Controller
     public class GreetingController {
 
-        @GetMapping("/")
+
+    @GetMapping("/")
         public String greeting(@RequestParam String id, Model a) {
+          if (id==null)id="123";
            a.addAttribute("text", Creator1.creat());
                        return "test";
         }
