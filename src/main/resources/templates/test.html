@@ -6,5 +6,17 @@
 </head>
 <body>
 <a href="https://hellosewe.herokuapp.com/12/?id=07,1982"> календарь :)</a>
+
+
+<br>
+a.addAttribute("txt", id.get(0));
+<form name="idform">
+    <input type="text" name="text" value="txt">
+
+    <input type="button" value="GO" onclick="location.href='?id='+escape(document.forms['idform'].elements['text'].value)+'"> //onClick
+</form>
+<br>
+
+<p text="'path:'+ ${text} "/>
 </body>
 </html>
