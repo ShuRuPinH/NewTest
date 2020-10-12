@@ -19,6 +19,8 @@ import java.util.List;
         public String greeting(@RequestParam (required = false) String id, Model a) {
           if (id==null)id="123";
            a.addAttribute("text", Creator1.creat(id));
+        a.addAttribute("h1", "<h1>");
+        a.addAttribute("h1e", "</h1>");
                        return "test";
         }
 
