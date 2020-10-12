@@ -30,7 +30,6 @@
 
 </table>
 
-<div th:insert="~{h1}"><p th:text="'path:'+ ${text} "/></div>><p th:text="'path:'+ ${text} "/>
-<div th:insert="~{h1e}"></div>
+<p th:utext="${h1} "/><div th:text="${text}"/><p th:utext="${h1e} "/>
 </body>
 </html>
